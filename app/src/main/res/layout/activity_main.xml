@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/count_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="РАССЧИТАТЬ"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/Header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/head1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Наименование" />
+
+            <TextView
+                android:id="@+id/head2"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:text="Вес" />
+
+            <TextView
+                android:id="@+id/head3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Стоимость" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t0"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Бутылки" />
+
+            <EditText
+                android:id="@+id/col_weight0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/col_cost0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="0.106" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t1"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Макулатура" />
+
+            <EditText
+                android:id="@+id/col_weight1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/col_cost1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="0.466" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t2"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Пэт" />
+
+            <EditText
+                android:id="@+id/col_weight2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/col_cost2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="1.587" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t3"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Ж/Б" />
+
+            <EditText
+                android:id="@+id/col_weight3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/col_cost3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="1.425" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t4"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Плёнка" />
+
+            <EditText
+                android:id="@+id/col_weight4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/col_cost4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="1.587" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Стеклобой цветной" />
+
+            <EditText
+                android:id="@+id/col_weight5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/col_cost5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="0.264" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t6"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Стеклобой белый" />
+
+            <EditText
+                android:id="@+id/col_weight6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/col_cost6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="0.264" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/col_t"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="   " />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t7"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Общий вес" />
+
+            <EditText
+                android:id="@+id/total_weight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+
+                android:textIsSelectable="true"
+
+                android:focusable="false"
+                android:ems="10" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/col8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/col_t8"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Общая сумма" />
+
+            <EditText
+                android:id="@+id/total_sum"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:textIsSelectable="true"
+                android:focusable="false" />
+
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
